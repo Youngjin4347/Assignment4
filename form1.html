@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<main>
+    <h1>HGU Shop</h1>
+
+    <form>
+
+        <h2>회원가입</h2>
+
+        <label for="firstName">성</label>
+        <input type="text" id="firstName" name="firstName">
+        <label for="lastName">이름</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="username">유저 이름</label>
+        <input type="text" id="username" name="username" placeholder="Username"><br><br>
+
+        <label for="email">이메일 <span class="optional">(선택사항)</span> </label>
+        <input type="text" id="email" name="email" placeholder="hgu123@gmail.com"><br><br>
+
+        <label for="number">전화번호</label>
+        <input type="text" id="number" name="number" placeholder="010-XXXX-XXXX"><br><br>
+
+        <label for="birth">생일 </label>
+        <input type="date" id="birth" name="birth"><br><br>
+
+        <label for="country">국가</label>
+        <select id="country" name="country">
+            <option value="">Choose...</option>
+            <option value="korea">한국</option>
+            <option value="usa">미국</option>
+            <option value="japan">일본</option>
+            <option value="uk">영국</option>
+            <option value="china">중국</option>
+        </select><br><br>
+
+        <label for="message">어떻게 가입하게 되었나요? <span class="optional">(선택사항)</span>  </label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <input type="checkbox" id="sameAddress" name="sameAddress">
+        <label for="sameAddress">
+            개인정보 수집 및 이용에 동의합니다.
+        </label><br>
+        <input type="checkbox" id="saveInfo" name="saveInfo">
+        <label for="saveInfo">
+            문자 및 SNS 수신에 동의합니다.
+        </label>
+
+        <hr>
+
+        <h2>결제 방법</h2>
+
+        <input type="radio" id="creditCard" name="payment" value="credit">
+        <label for="creditCard">신용카드</label>
+        <input type="radio" id="debitCard" name="payment" value="debit">
+        <label for="debitCard">체크카드</label><br><br>
+
+        <label for="cardName">카드에 표시된 이름</label>
+        <input type="text" id="cardName" name="cardName"><br>
+        <label for="cardNumber">신용 카드 번호</label>
+        <input type="text" id="cardNumber" name="cardNumber"><br><br>
+
+        <label for="expiration">신용 카드 만료일</label>
+        <input type="text" id="expiration" name="expiration">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv"><br><br>
+
+        <button type="submit">가입하기</button>
+
+    </form>
+
+    </body>
+
+</html>
